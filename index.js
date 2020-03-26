@@ -1,17 +1,17 @@
 // /**
 //  * EXAMPLE 1 - Variable declaration
 //  */
-// var a;
+var a;
 
 // console.log(a);
 
-// // console.log(b); // Uncaught ReferenceError: b is not defined
+// console.log(b); // Uncaught ReferenceError: b is not defined
 
 // let c;
 
 // console.log(c);
 
-// // const d; // Uncaught SyntaxError: Missing initializer in const declaration
+// const d; // Uncaught SyntaxError: Missing initializer in const declaration
 
 // /**
 //  * EXAMPLE 2 - "let"
@@ -89,29 +89,14 @@
 //  * Declare "anotherObject".
 //  * Later assign value to it - object with three name-value pairs
 //  */
-// let x = 10;
-// const y = true;
-// const myObject = {
-//   a: x,
-//   b: y
-// };
-// console.log(myObject);
-// /**
-//  * {a: 10, b: true, __proto__: Object}
-//  */
-// x = 20;
-// let anotherObject;
-// anotherObject = {
-//   newA: x,
-//   b: y,
-//   c: myObject
-// };
-// console.log(anotherObject);
-// /**
-//  * {
-//  * newA: 20,
-//  * b: true,
-//  * c: {a: 10, b: true, __proto__: Object},
-//  * __proto__: Object
-//  * }
-//  */
+
+let x = 10;
+const y = true;
+
+const myObject = {a: x, b: y,}
+console.log(myObject);
+
+x = 20;
+let anotherObject;
+anotherObject = {newA: x, b: y, c: myObject};
+console.log(anotherObject);
