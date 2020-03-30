@@ -54,20 +54,34 @@
 // console.log(myObject);
 // console.log(copyOfMyObject);
 
-let myObject = {
-    a: true,
-    b: null,
-    c: 25
+// let myObject = {
+//     a: true,
+//     b: null,
+//     c: 25
+// };
+
+// console.log(myObject["a"]); //true
+
+// console.log(myObject["b"]); //null
+
+// const propertyName = "c";
+
+// console.log(myObject[propertyName]); //25
+
+// myObject["new" + "Property" + "Name"] = "Value for dynamically computed property name";
+
+// console.log(myObject);
+
+//Example 4
+
+const myObject = {
+    a: 3,
+    b: true
 };
 
-console.log(myObject["a"]); //true
+console.log(myObject.c) //undefined
 
-console.log(myObject["b"]); //null
-
-const propertyName = "c";
-
-console.log(myObject[propertyName]); //25
-
-myObject["new" + "Property" + "Name"] = "Value for dynamically computed property name";
+myObject.newPropertyWithUndefinedValue = undefined; //IMPORTANT: never assign undefined as a property or variable, use NULL instead
 
 console.log(myObject);
+console.log(myObject.newPropertyWithUndefinedValue);
