@@ -74,14 +74,28 @@
 
 //Example 4
 
-const myObject = {
-    a: 3,
-    b: true
-};
+// const myObject = {
+//     a: 3,
+//     b: true
+// };
 
-console.log(myObject.c) //undefined
+// console.log(myObject.c) //undefined
 
-myObject.newPropertyWithUndefinedValue = undefined; //IMPORTANT: never assign undefined as a property or variable, use NULL instead
+// myObject.newPropertyWithUndefinedValue = undefined; //IMPORTANT: never assign undefined as a property or variable, use NULL instead
 
-console.log(myObject);
-console.log(myObject.newPropertyWithUndefinedValue);
+// console.log(myObject);
+// console.log(myObject.newPropertyWithUndefinedValue);
+
+//Challenge 3
+
+let objectWithNestedObject = {};
+
+objectWithNestedObject.nestedObject = {};
+
+objectWithNestedObject.nestedObject.a = null;
+
+const newPropertyName = "b";
+
+objectWithNestedObject.nestedObject[newPropertyName] = true;
+
+console.log(objectWithNestedObject);
