@@ -23,20 +23,33 @@
 
 //Challenge 1
 
-let myPost = {};;
+// let myPost = {};;
 
-myPost.postTitle = "object is reference type";
+// myPost.postTitle = "object is reference type";
 
-myPost.postLikes = 0;
+// myPost.postLikes = 0;
 
-myPost.shared = false;
+// myPost.shared = false;
 
-console.log(myPost);
+// console.log(myPost);
 
-myPost.postLikes =+1;
+// myPost.postLikes =+1;
 
-console.log(myPost);
+// console.log(myPost);
 
-delete myPost.shared;
+// delete myPost.shared;
 
-console.log(myPost);
+// console.log(myPost);
+
+//Challenge 2
+
+var myObject = {
+    a: 10
+}
+
+var copyOfMyObject = myObject
+
+copyOfMyObject.b = false;
+
+console.log(myObject);
+console.log(copyOfMyObject);
