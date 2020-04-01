@@ -1,15 +1,32 @@
+// /**
+//  * Example 1
+//  * 
+//  * Simplest function in JS
+//  */
+
+// function myFunction() {}
+
+// console.log(myFunction);
+
+// myFunction();
+
+// console.log(myFunction()); //undefined
+
+// console.log(myFunction(10, true)); //undefined
+
 /**
- * Example 1
+ * Example 2
  * 
- * Simplest function in JS
+ * Parameters of a function
  */
 
-function myFunction() {}
+ function myFunction(a,b) {
+     console.log(a);
+     console.log(b);
+ }
 
-console.log(myFunction);
+ myFunction(10, 5);
 
-myFunction();
+ myFunction(true, null);
 
-console.log(myFunction()); //undefined
-
-console.log(myFunction(10, true)); //undefined
+ console.log(myFunction(4, 3)); //undefined - nothing returned
