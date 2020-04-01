@@ -68,14 +68,28 @@
 
 //  console.log(a, b);
 
+// /**
+//  * Example 5
+//  * 
+//  * Add return
+//  */
+
+//  function sum(a, b){
+//      return a + b;
+//  }
+
+//  sum(10, 5);
+
 /**
- * Example 5
+ * Example 6
  * 
- * Add return
+ * What happens after return?
  */
 
- function sum(a, b){
-     return a + b;
- }
+ function myFunction(a){
+    console.log(a);
+    return a; //function stops here
+    console.log(a);    
+}
 
- sum(10, 5);
+myFunction(10);
