@@ -14,19 +14,33 @@
 
 // console.log(myFunction(10, true)); //undefined
 
+// /**
+//  * Example 2
+//  * 
+//  * Parameters of a function
+//  */
+
+//  function myFunction(a,b) {
+//      console.log(a);
+//      console.log(b);
+//  }
+
+//  myFunction(10, 5);
+
+//  myFunction(true, null);
+
+//  console.log(myFunction(4, 3)); //undefined - nothing returned
+
 /**
- * Example 2
+ * Example 3
  * 
- * Parameters of a function
+ * Function scope
  */
 
- function myFunction(a,b) {
-     console.log(a);
-     console.log(b);
+ function myFunction(a,b ){
+     console.log(a, b);
  }
 
- myFunction(10, 5);
+ console.log(myFunction(3, 2));
 
- myFunction(true, null);
-
- console.log(myFunction(4, 3)); //undefined - nothing returned
+ console.log(a);
