@@ -31,16 +31,39 @@
 
 //  console.log(myFunction(4, 3)); //undefined - nothing returned
 
+// /**
+//  * Example 3
+//  * 
+//  * Function scope
+//  */
+
+//  function myFunction(a,b ){
+//      console.log(a, b);
+//  }
+
+//  console.log(myFunction(3, 2));
+
+//  console.log(a);
+
 /**
- * Example 3
+ * Example 4
  * 
- * Function scope
+ * Reuse parameter names
  */
 
- function myFunction(a,b ){
+ function myFunction1(a ,b) {
      console.log(a, b);
  }
 
- console.log(myFunction(3, 2));
+ function myFunction2(a, b) {
+     console.log(a, b);
+ }
 
- console.log(a);
+ const a = true;
+ const b = null;
+
+ myFunction1(2, 3);
+
+ myFunction2(5, 7);
+
+ console.log(a, b);
