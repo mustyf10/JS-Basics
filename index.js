@@ -45,25 +45,37 @@
 
 //  console.log(a);
 
+// /**
+//  * Example 4
+//  * 
+//  * Reuse parameter names
+//  */
+
+//  function myFunction1(a ,b) {
+//      console.log(a, b);
+//  }
+
+//  function myFunction2(a, b) {
+//      console.log(a, b);
+//  }
+
+//  const a = true;
+//  const b = null;
+
+//  myFunction1(2, 3);
+
+//  myFunction2(5, 7);
+
+//  console.log(a, b);
+
 /**
- * Example 4
+ * Example 5
  * 
- * Reuse parameter names
+ * Add return
  */
 
- function myFunction1(a ,b) {
-     console.log(a, b);
+ function sum(a, b){
+     return a + b;
  }
 
- function myFunction2(a, b) {
-     console.log(a, b);
- }
-
- const a = true;
- const b = null;
-
- myFunction1(2, 3);
-
- myFunction2(5, 7);
-
- console.log(a, b);
+ sum(10, 5);
