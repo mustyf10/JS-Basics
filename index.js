@@ -110,17 +110,45 @@
 
 //  multiplication(2, 2, 2);
 
+// /**
+//  * CHALLENGE 2
+//  * 
+//  * Create function called 'concatenateStrings' and will have 2 parameters
+//  * this function will retrun concatenated strings
+//  */
+
+// function concatenateStrings(a, b){
+//     return a + " " + b;
+// }
+
+// const c = concatenateStrings("Hello", "World");
+
+// console.log(c);
+
 /**
- * CHALLENGE 2
+ * CHALLENGE 3
  * 
- * Create function called 'concatenateStrings' and will have 2 parameters
- * this function will retrun concatenated strings
+ * Create function called outerFunction with 2 paramenters
+ * Create function called innerFunction with 1 parameter
+ * innerFunction will return square of parameter
+ * outerFunction will return sum of parameters
+ * call innerFunction with argument sum of both parameters from outerFunction
+ * log to the console result innerFunction
  */
 
-function concatenateStrings(a, b){
-    return a + " " + b;
-}
+ function outerFunction (a, b){
+    function innerFunction (c){
+    return c * c;
+    }
+    const c = a + b;
+    console.log(innerFunction(c));
+ }
 
-const c = concatenateStrings("Hello", "World");
+outerFunction(2, 3);
 
-console.log(c);
+outerFunction(5, 5);
+
+outerFunction(7, 3);
+
+
+ 
