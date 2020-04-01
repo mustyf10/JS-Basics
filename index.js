@@ -94,18 +94,33 @@
 
 // myFunction(10);
 
+// /**
+//  * CHALLENGE 1
+//  * 
+//  * Create function with 3 parameters
+//  * Create new variable and assign result
+//  * Print to the console the result
+//  * No return
+//  */
+
+//  function multiplication(a, b, c){
+//     var result = a * b * c;
+//     console.log(result);
+//  }
+
+//  multiplication(2, 2, 2);
+
 /**
- * CHALLENGE 1
+ * CHALLENGE 2
  * 
- * Create function with 3 parameters
- * Create new variable and assign result
- * Print to the console the result
- * No return
+ * Create function called 'concatenateStrings' and will have 2 parameters
+ * this function will retrun concatenated strings
  */
 
- function multiplication(a, b, c){
-    var result = a * b * c;
-    console.log(result);
- }
+function concatenateStrings(a, b){
+    return a + " " + b;
+}
 
- multiplication(2, 2, 2);
+const c = concatenateStrings("Hello", "World");
+
+console.log(c);
