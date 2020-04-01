@@ -80,16 +80,32 @@
 
 //  sum(10, 5);
 
+// /**
+//  * Example 6
+//  * 
+//  * What happens after return?
+//  */
+
+//  function myFunction(a){
+//     console.log(a);
+//     return a; //function stops here
+//     console.log(a);    
+// }
+
+// myFunction(10);
+
 /**
- * Example 6
+ * CHALLENGE 1
  * 
- * What happens after return?
+ * Create function with 3 parameters
+ * Create new variable and assign result
+ * Print to the console the result
+ * No return
  */
 
- function myFunction(a){
-    console.log(a);
-    return a; //function stops here
-    console.log(a);    
-}
+ function multiplication(a, b, c){
+    var result = a * b * c;
+    console.log(result);
+ }
 
-myFunction(10);
+ multiplication(2, 2, 2);
