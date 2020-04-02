@@ -172,14 +172,37 @@
 //   console.log("Delayed Message");
 // }, 3000);
 
+// /**
+//  * Example 3
+//  *
+//  * Callback function (ii)
+//  */
+
+// let i = 1;
+// setInterval(function() {
+//   console.log("log each one second " + i);
+//   i = i + 1;
+// }, 1000);
+
 /**
- * Example 3
+ * CHALLENGE
  *
- * Callback function (ii)
+ * Function Expressions
+ *
+ * Use following built-in functions:
+ * setTimeout
+ * setInterval
+ * clearInterval
+ *
+ * Print to the console only 5 messages with 2 second intervals
  */
 
-let i = 1;
-setInterval(function() {
-  console.log("log each one second " + i);
+var i = 1;
+const myInterval = setInterval(function() {
+  console.log("Here is message number " + i);
   i = i + 1;
-}, 1000);
+}, 2000);
+
+setTimeout(function() {
+  clearInterval(myInterval);
+}, 10000);
