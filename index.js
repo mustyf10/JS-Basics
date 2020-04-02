@@ -150,14 +150,24 @@
 
 // outerFunction(7, 3);
 
-/**
- * ANONYMOUS FUNCTION EXPRESSIONS
- */
+// /**
+//  * ANONYMOUS FUNCTION EXPRESSIONS
+//  */
+
+// /**
+//  * Example 1
+//  *
+//  */
+
+// const myFunction = function() {}; //myFunction holds function as a value
+// console.log(myFunction); //can call the value
 
 /**
- * Example 1
+ * Example 2
  *
+ * Callback function
  */
 
-const myFunction = function() {}; //myFunction holds function as a value
-console.log(myFunction); //can call the value
+setTimeout(function() {
+  console.log("Delayed Message");
+}, 3000);
