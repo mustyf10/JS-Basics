@@ -1,6 +1,6 @@
 // /**
 //  * Example 1
-//  * 
+//  *
 //  * Simplest function in JS
 //  */
 
@@ -16,7 +16,7 @@
 
 // /**
 //  * Example 2
-//  * 
+//  *
 //  * Parameters of a function
 //  */
 
@@ -33,7 +33,7 @@
 
 // /**
 //  * Example 3
-//  * 
+//  *
 //  * Function scope
 //  */
 
@@ -47,7 +47,7 @@
 
 // /**
 //  * Example 4
-//  * 
+//  *
 //  * Reuse parameter names
 //  */
 
@@ -70,7 +70,7 @@
 
 // /**
 //  * Example 5
-//  * 
+//  *
 //  * Add return
 //  */
 
@@ -82,21 +82,21 @@
 
 // /**
 //  * Example 6
-//  * 
+//  *
 //  * What happens after return?
 //  */
 
 //  function myFunction(a){
 //     console.log(a);
 //     return a; //function stops here
-//     console.log(a);    
+//     console.log(a);
 // }
 
 // myFunction(10);
 
 // /**
 //  * CHALLENGE 1
-//  * 
+//  *
 //  * Create function with 3 parameters
 //  * Create new variable and assign result
 //  * Print to the console the result
@@ -112,7 +112,7 @@
 
 // /**
 //  * CHALLENGE 2
-//  * 
+//  *
 //  * Create function called 'concatenateStrings' and will have 2 parameters
 //  * this function will retrun concatenated strings
 //  */
@@ -125,30 +125,39 @@
 
 // console.log(c);
 
+// /**
+//  * CHALLENGE 3
+//  *
+//  * Create function called outerFunction with 2 paramenters
+//  * Create function called innerFunction with 1 parameter
+//  * innerFunction will return square of parameter
+//  * outerFunction will return sum of parameters
+//  * call innerFunction with argument sum of both parameters from outerFunction
+//  * log to the console result innerFunction
+//  */
+
+// function outerFunction(a, b) {
+//   function innerFunction(c) {
+//     return c * c;
+//   }
+//   const c = a + b;
+//   console.log(innerFunction(c));
+// }
+
+// outerFunction(2, 3);
+
+// outerFunction(5, 5);
+
+// outerFunction(7, 3);
+
 /**
- * CHALLENGE 3
- * 
- * Create function called outerFunction with 2 paramenters
- * Create function called innerFunction with 1 parameter
- * innerFunction will return square of parameter
- * outerFunction will return sum of parameters
- * call innerFunction with argument sum of both parameters from outerFunction
- * log to the console result innerFunction
+ * ANONYMOUS FUNCTION EXPRESSIONS
  */
 
- function outerFunction (a, b){
-    function innerFunction (c){
-    return c * c;
-    }
-    const c = a + b;
-    console.log(innerFunction(c));
- }
+/**
+ * Example 1
+ *
+ */
 
-outerFunction(2, 3);
-
-outerFunction(5, 5);
-
-outerFunction(7, 3);
-
-
- 
+const myFunction = function() {}; //myFunction holds function as a value
+console.log(myFunction); //can call the value
