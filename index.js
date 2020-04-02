@@ -162,12 +162,24 @@
 // const myFunction = function() {}; //myFunction holds function as a value
 // console.log(myFunction); //can call the value
 
+// /**
+//  * Example 2
+//  *
+//  * Callback function
+//  */
+
+// setTimeout(function() {
+//   console.log("Delayed Message");
+// }, 3000);
+
 /**
- * Example 2
+ * Example 3
  *
- * Callback function
+ * Callback function (ii)
  */
 
-setTimeout(function() {
-  console.log("Delayed Message");
-}, 3000);
+let i = 1;
+setInterval(function() {
+  console.log("log each one second " + i);
+  i = i + 1;
+}, 1000);
