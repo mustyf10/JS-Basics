@@ -18,19 +18,31 @@
 
 // 4 <= 10 <= 20 || 5;
 
+// /**
+//  * Statements
+//  *
+//  */
+// let a;
+// a = 3;
+
+// function myFunction(b) {
+//   return b;
+// }
+
+// myFunction(a);
+
+// if (true) {
+//   console.log("Hello from if statement");
+// }
+
 /**
- * Statements
- *
+ * Expression Statements
  */
+console.log(4 + 3);
+
 let a;
-a = 3;
+a = 5;
 
-function myFunction(b) {
-  return b;
-}
+true;
 
-myFunction(a);
-
-if (true) {
-  console.log("Hello from if statement");
-}
+console.log(true);
