@@ -197,12 +197,43 @@
 
 // console.log(+myVariable1 <= +myVariable2);
 
-/** Challenge 2
- *
- * Print to console remainder of the divison of myNum1 by myNum2
+// /**
+//  * Challenge 2
+//  *
+//  * Print to console remainder of the divison of myNum1 by myNum2
+//  */
+
+// let myNum1 = 10;
+// let myNum2 = 3;
+
+// console.log(myNum1 % myNum2);
+
+/**
+ * Challenge 3
  */
 
-let myNum1 = 10;
-let myNum2 = 3;
+console.log(3 || (true && null) || false); //3
 
-console.log(myNum1 % myNum2);
+/**
+ * Challenge 4
+ *
+ * alternative expressions
+ */
+
+let a = 10;
+
+//a = a + 1;
+a += 1;
+console.log(a);
+
+//a = a * 2;
+a *= 2;
+console.log(a);
+
+//a = a - 5;
+a -= 5;
+console.log(a);
+
+//a = a / 2;
+a /= 2;
+console.log(a);
