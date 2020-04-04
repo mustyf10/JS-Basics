@@ -35,14 +35,41 @@
 //   console.log("Hello from if statement");
 // }
 
+// /**
+//  * Expression Statements
+//  */
+// console.log(4 + 3);
+
+// let a;
+// a = 5;
+
+// true;
+
+// console.log(true);
+
 /**
- * Expression Statements
+ * Challenge 1
+ *
+ * expression or statement?
  */
-console.log(4 + 3);
+const myObject = {
+  x: 10,
+  y: true,
+};
 
-let a;
-a = 5;
+console.log(delete myObject.x);
 
-true;
+delete myObject.x; // expression
 
-console.log(true);
+/**
+ * Challenge 2
+ */
+function fn() {
+  console.log("Greetings from fn function");
+
+  return function (a) {
+    console.log(a);
+  };
+}
+
+fn()(true); //argument true is passed through function, console logs true
