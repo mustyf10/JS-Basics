@@ -184,17 +184,25 @@
 // a = b = 5;
 // console.log(a, b);
 
-/**
- * Challenge 1
+// /**
+//  * Challenge 1
+//  *
+//  * Compare 2 variable
+//  * log to console true if 1 is less than or equal to 2
+//  * conver to numbers before comparison
+//  */
+
+// let myVariable1 = 10;
+// let myVariable2 = "5";
+
+// console.log(+myVariable1 <= +myVariable2);
+
+/** Challenge 2
  *
- * Compare 2 variable
- * log to console true if 1 is less than or equal to 2
- * conver to numbers before comparison
+ * Print to console remainder of the divison of myNum1 by myNum2
  */
 
-let myVariable1 = 10;
-let myVariable2 = "5";
+let myNum1 = 10;
+let myNum2 = 3;
 
-console.log(+myVariable1 <= +myVariable2);
-
-
+console.log(myNum1 % myNum2);
