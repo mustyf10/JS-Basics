@@ -1,19 +1,36 @@
+// /**
+//  * Expressions
+//  */
+// 10;
+// ("abc");
+// 5 + 3;
+// (function (a) {
+//   console.log(a);
+// });
+
+// // immediately invoiked function expression
+// (function () {
+//   console.log("HELLO");
+// })();
+
+// let a;
+// a = 10;
+
+// 4 <= 10 <= 20 || 5;
+
 /**
- * Expressions
+ * Statements
+ *
  */
-10;
-("abc");
-5 + 3;
-(function (a) {
-  console.log(a);
-});
-
-// immediately invoiked function expression
-(function () {
-  console.log("HELLO");
-})();
-
 let a;
-a = 10;
+a = 3;
 
-4 <= 10 <= 20 || 5;
+function myFunction(b) {
+  return b;
+}
+
+myFunction(a);
+
+if (true) {
+  console.log("Hello from if statement");
+}
