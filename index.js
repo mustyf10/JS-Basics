@@ -110,58 +110,77 @@
 // console.log(null == undefined); //both become the number 0
 // console.log((((0 === "") === null) === undefined) === false);
 
+// /**
+//  * Section 3
+//  *
+//  * Logical Operators
+//  */
+// console.log(true || false);
+// console.log(false || true);
+
+// console.log("abc" || "");
+// console.log("" || "abc");
+// console.log("" || "");
+
+// console.log("" || 0 || null || undefined || NaN || false); //false
+
+// let city;
+// const defaultCity = "New York";
+
+// console.log(city || defaultCity);
+
+// city = "Los Angeles";
+
+// console.log(city || defaultCity); //non-empty strings are always true. first true value is always given (the one on the left)
+
+// console.log("___________");
+
+// console.log(true && false);
+// console.log(false && true);
+// console.log("abc" && 10 && false && "" && "abcd");
+// console.log("abc" && 10 && NaN && "" && "abcd"); //first false operand is returned value
+
+// console.log("abc" && 10 && true && 123 && "string"); // result is string
+
+// console.log("____________");
+
+// console.log(!"abc");
+// console.log(!"");
+// console.log(!0);
+
+// let myVariable = undefined;
+
+// console.log(!myVariable);
+
+// myVariable = "Mustafa";
+// console.log(!myVariable);
+
+// //truthy falsy check
+// myVariable = null;
+// console.log(!!myVariable);
+// myVariable = 10;
+// console.log(!!myVariable);
+
+// //or returns first truthy value
+// //and returns first falsy value, or stops at first falsy value. Last value of last operand is returned if there is no flasy value
+// //not is an unary operator, prefix operator. Returns either false or true
+// //use !! to check whether value is truthy or falsy
+
 /**
- * Section 3
+ * Section 4
  *
- * Logical Operators
+ * Operators precedence
  */
-console.log(true || false);
-console.log(false || true);
+console.log(2 + 4 * 10);
 
-console.log("abc" || "");
-console.log("" || "abc");
-console.log("" || "");
+/**
+ * Section 5
+ *
+ * Operators associativity
+ */
+let a, b;
+b = 3;
 
-console.log("" || 0 || null || undefined || NaN || false); //false
+a = b = 5;
+console.log(a, b);
 
-let city;
-const defaultCity = "New York";
-
-console.log(city || defaultCity);
-
-city = "Los Angeles";
-
-console.log(city || defaultCity); //non-empty strings are always true. first true value is always given (the one on the left)
-
-console.log("___________");
-
-console.log(true && false);
-console.log(false && true);
-console.log("abc" && 10 && false && "" && "abcd");
-console.log("abc" && 10 && NaN && "" && "abcd"); //first false operand is returned value
-
-console.log("abc" && 10 && true && 123 && "string"); // result is string
-
-console.log("____________");
-
-console.log(!"abc");
-console.log(!"");
-console.log(!0);
-
-let myVariable = undefined;
-
-console.log(!myVariable);
-
-myVariable = "Mustafa";
-console.log(!myVariable);
-
-//truthy falsy check
-myVariable = null;
-console.log(!!myVariable);
-myVariable = 10;
-console.log(!!myVariable);
-
-//or returns first truthy value
-//and returns first falsy value, or stops at first falsy value. Last value of last operand is returned if there is no flasy value
-//not is an unary operator, prefix operator. Returns either false or true
-//use !! to check whether value is truthy or falsy
