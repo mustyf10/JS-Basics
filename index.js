@@ -55,57 +55,113 @@
 // console.log(--d);
 // console.log(d);
 
+// /**
+//  * Section 2
+//  *
+//  * Comparison operators
+//  */
+
+// let a, b, c;
+// a = 5;
+// b = 7;
+// c = 5;
+
+// console.log(a < b);
+// console.log(a > b);
+
+// console.log(a <= c);
+// console.log(a >= c);
+
+// console.log("_____");
+
+// // string comparison
+// let myStr1, myStr2;
+
+// myStr1 = "abc";
+// myStr2 = "bcd";
+// myStr3 = "Bcd";
+
+// console.log(myStr1 > myStr2);
+// console.log(myStr1 < myStr2);
+// console.log(myStr1 > myStr3);
+
+// console.log("_____");
+
+// // equality operators
+// let myString = "0";
+// let myNumber = 0;
+// let myBoolean = false;
+
+// console.log(myString == myNumber);
+// console.log(myNumber == myBoolean);
+// console.log(myBoolean == myString);
+
+// // strict equality operator - type and value are compared
+// console.log(myString === myNumber);
+// console.log(myNumber === myBoolean);
+// console.log(myBoolean === myString);
+
+// console.log(myString != myNumber);
+// console.log(myString !== myNumber);
+
+// console.log("_____");
+
+// console.log(null === undefined);
+// console.log(null == undefined); //both become the number 0
+// console.log((((0 === "") === null) === undefined) === false);
+
 /**
- * Section 2
+ * Section 3
  *
- * Comparison operators
+ * Logical Operators
  */
+console.log(true || false);
+console.log(false || true);
 
-let a, b, c;
-a = 5;
-b = 7;
-c = 5;
+console.log("abc" || "");
+console.log("" || "abc");
+console.log("" || "");
 
-console.log(a < b);
-console.log(a > b);
+console.log("" || 0 || null || undefined || NaN || false); //false
 
-console.log(a <= c);
-console.log(a >= c);
+let city;
+const defaultCity = "New York";
 
-console.log("_____");
+console.log(city || defaultCity);
 
-// string comparison
-let myStr1, myStr2;
+city = "Los Angeles";
 
-myStr1 = "abc";
-myStr2 = "bcd";
-myStr3 = "Bcd";
+console.log(city || defaultCity); //non-empty strings are always true. first true value is always given (the one on the left)
 
-console.log(myStr1 > myStr2);
-console.log(myStr1 < myStr2);
-console.log(myStr1 > myStr3);
+console.log("___________");
 
-console.log("_____");
+console.log(true && false);
+console.log(false && true);
+console.log("abc" && 10 && false && "" && "abcd");
+console.log("abc" && 10 && NaN && "" && "abcd"); //first false operand is returned value
 
-// equality operators
-let myString = "0";
-let myNumber = 0;
-let myBoolean = false;
+console.log("abc" && 10 && true && 123 && "string"); // result is string
 
-console.log(myString == myNumber);
-console.log(myNumber == myBoolean);
-console.log(myBoolean == myString);
+console.log("____________");
 
-// strict equality operator - type and value are compared
-console.log(myString === myNumber);
-console.log(myNumber === myBoolean);
-console.log(myBoolean === myString);
+console.log(!"abc");
+console.log(!"");
+console.log(!0);
 
-console.log(myString != myNumber);
-console.log(myString !== myNumber);
+let myVariable = undefined;
 
-console.log("_____");
+console.log(!myVariable);
 
-console.log(null === undefined);
-console.log(null == undefined); //both become the number 0
-console.log((((0 === "") === null) === undefined) === false);
+myVariable = "Mustafa";
+console.log(!myVariable);
+
+//truthy falsy check
+myVariable = null;
+console.log(!!myVariable);
+myVariable = 10;
+console.log(!!myVariable);
+
+//or returns first truthy value
+//and returns first falsy value, or stops at first falsy value. Last value of last operand is returned if there is no flasy value
+//not is an unary operator, prefix operator. Returns either false or true
+//use !! to check whether value is truthy or falsy
