@@ -166,21 +166,35 @@
 // //not is an unary operator, prefix operator. Returns either false or true
 // //use !! to check whether value is truthy or falsy
 
-/**
- * Section 4
- *
- * Operators precedence
- */
-console.log(2 + 4 * 10);
+// /**
+//  * Section 4
+//  *
+//  * Operators precedence
+//  */
+// console.log(2 + 4 * 10);
+
+// /**
+//  * Section 5
+//  *
+//  * Operators associativity
+//  */
+// let a, b;
+// b = 3;
+
+// a = b = 5;
+// console.log(a, b);
 
 /**
- * Section 5
+ * Challenge 1
  *
- * Operators associativity
+ * Compare 2 variable
+ * log to console true if 1 is less than or equal to 2
+ * conver to numbers before comparison
  */
-let a, b;
-b = 3;
 
-a = b = 5;
-console.log(a, b);
+let myVariable1 = 10;
+let myVariable2 = "5";
+
+console.log(+myVariable1 <= +myVariable2);
+
 
