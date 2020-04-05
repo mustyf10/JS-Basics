@@ -24,16 +24,34 @@
  *
  * Function scope
  */
-let e;
+//let e;
 
-function myFunction(a, b) {
-  const c = true;
-  console.log(c);
-  //console.log(d) undefined value d not in the function or global scope
-  console.log(e);
-  console.log(a, b); //different values depending on what is passed through
+// function myFunction(a, b) {
+//   const c = true;
+//   console.log(c);
+//   //console.log(d) undefined value d not in the function or global scope
+//   console.log(e);
+//   console.log(a, b); //different values depending on what is passed through
+// }
+
+// myFunction();
+
+// myFunction(2, 3);
+
+/**
+ * Example 3
+ *
+ * Scope Chain
+ */
+
+function sum(a, b) {
+  const c = 3;
+  function mult(a, b) {
+    return a * b * c;
+  }
+  console.log(mult(a, b)); //150
+  return a + b;
 }
 
-myFunction();
-
-myFunction(2, 3);
+const result = sum(10, 5);
+console.log(result); //15
