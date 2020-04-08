@@ -91,24 +91,46 @@
 
 //   myFn();
 
+// /**
+//  * Challenge 1
+//  *
+//  * Function scopes
+//  */
+
+// const b = 2;
+// let d = 15;
+
+// function myFn1(a) {
+//   let b;
+//   let d = 10;
+//   myFn2();
+// }
+
+// function myFn2(a) {
+//   let c = 5;
+//   console.log(a, b, c, d); // udefined 2 5 15
+// }
+
+// myFn1();
+
 /**
- * Challenge 1
+ * Challenge 2
  *
- * Function scopes
+ * Strict Mode
+ * Fix the code below
  */
+"use strict";
 
-const b = 2;
-let d = 15;
+// function myFunction() {
+//   a = 2;
+//   return a;
+// }
 
-function myFn1(a) {
-  let b;
-  let d = 10;
-  myFn2();
+// myFunction();
+
+function myFunction() {
+  let a = 2;
+  return a;
 }
 
-function myFn2(a) {
-  let c = 5;
-  console.log(a, b, c, d); // udefined 2 5 15
-}
-
-myFn1();
+myFunction();
