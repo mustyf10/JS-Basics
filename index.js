@@ -113,24 +113,36 @@
 
 // myFn1();
 
-/**
- * Challenge 2
- *
- * Strict Mode
- * Fix the code below
- */
-"use strict";
+// /**
+//  * Challenge 2
+//  *
+//  * Strict Mode
+//  * Fix the code below
+//  */
+// "use strict";
+
+// // function myFunction() {
+// //   a = 2;
+// //   return a;
+// // }
+
+// // myFunction();
 
 // function myFunction() {
-//   a = 2;
+//   let a = 2;
 //   return a;
 // }
 
 // myFunction();
 
-function myFunction() {
-  let a = 2;
-  return a;
-}
+/**
+ * Challenge 3
+ * 
+ * Callback function
+ */
 
-myFunction();
+setTimeout(function myFn(){
+    console.log("Hello from myFN")
+}, 2000);
+
+myFn();
