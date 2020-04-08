@@ -44,14 +44,27 @@
  * Scope Chain
  */
 
-function sum(a, b) {
-  const c = 3;
-  function mult(a, b) {
-    return a * b * c;
-  }
-  console.log(mult(a, b)); //150
-  return a + b;
-}
+// function sum(a, b) {
+//   const c = 3;
+//   function mult(a, b) {
+//     return a * b * c;
+//   }
+//   console.log(mult(a, b)); //150
+//   return a + b;
+// }
 
-const result = sum(10, 5);
-console.log(result); //15
+// const result = sum(10, 5);
+// console.log(result); //15
+
+/**
+ * Example 4
+ *
+ * Undeclared variable
+ */
+a = 10;
+console.log(a);
+
+const myFunction = function () {
+  b = 5;
+  console.log(b);
+};
