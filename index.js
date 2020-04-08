@@ -56,15 +56,38 @@
 // const result = sum(10, 5);
 // console.log(result); //15
 
-/**
- * Example 4
- *
- * Undeclared variable
- */
-a = 10;
-console.log(a);
+// /**
+//  * Example 4
+//  *
+//  * Undeclared variable
+//  */
+// a = 10;
+// console.log(a);
 
-const myFunction = function () {
-  b = 5;
-  console.log(b);
-};
+// const myFunction = function () {
+//   b = 5;
+//   console.log(b);
+// };
+
+/**
+ * Example 5
+ *
+ * Strict mode
+ */
+"use strict";
+
+// a = 10; // a is not defined
+
+// function myFn() {
+//   b = 5; // b is not defined
+// }
+
+// myFn();
+
+function myFn() {
+    "use strict";
+    b = 5; // b is not defined
+  }
+  
+  myFn();
+  
