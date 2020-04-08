@@ -69,25 +69,46 @@
 //   console.log(b);
 // };
 
-/**
- * Example 5
- *
- * Strict mode
- */
-"use strict";
+// /**
+//  * Example 5
+//  *
+//  * Strict mode
+//  */
+// "use strict";
 
-// a = 10; // a is not defined
+// // a = 10; // a is not defined
+
+// // function myFn() {
+// //   b = 5; // b is not defined
+// // }
+
+// // myFn();
 
 // function myFn() {
-//   b = 5; // b is not defined
-// }
+//     "use strict";
+//     b = 5; // b is not defined
+//   }
 
-// myFn();
+//   myFn();
 
-function myFn() {
-    "use strict";
-    b = 5; // b is not defined
-  }
-  
-  myFn();
-  
+/**
+ * Challenge 1
+ *
+ * Function scopes
+ */
+
+const b = 2;
+let d = 15;
+
+function myFn1(a) {
+  let b;
+  let d = 10;
+  myFn2();
+}
+
+function myFn2(a) {
+  let c = 5;
+  console.log(a, b, c, d); // udefined 2 5 15
+}
+
+myFn1();
