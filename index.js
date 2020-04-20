@@ -43,11 +43,32 @@
 // console.log(myArray[3].newProp);
 // console.log(myArray[3]["newProp"]);
 
+// /**
+//  * Example 4
+//  *
+//  * Square bracket notation
+//  */
+// const myArray = [1, 2];
+// console.log(myArray[0]);
+// // console.log(myArray.0);  Cannot access array property using dot notation
+
 /**
- * Example 4
- * 
- * Square bracket notation
+ * Example 5
+ *
+ * Delete elements
  */
-const myArray = [1, 2];
-console.log(myArray[0]);
-// console.log(myArray.0);  Cannot access array property using dot notation
+const myArray = [true, null, 1, 2, "abc"];
+console.log(myArray);
+
+delete myArray[2]; //length will remain the same but specific element name will be deleted
+console.log(myArray);
+console.log(myArray[2]); //undefined
+
+myArray.pop(); // deletes last element in array
+console.log(myArray);
+
+myArray.pop();
+console.log(myArray);
+
+myArray.shift(); // remove first element in array
+console.log(myArray);
