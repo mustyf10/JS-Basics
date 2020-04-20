@@ -12,13 +12,33 @@
  *
  * Add elements to the array
  */
-const myArray = [];
+// const myArray = [];
 
-myArray[0] = "First element";
+// myArray[0] = "First element";
+// console.log(myArray);
+
+// myArray[1] = "Second element";
+// console.log(myArray);
+
+// myArray.push("Third element");
+// console.log(myArray);
+
+/**
+ * Example 3
+ *
+ * Modify Elements
+ */
+
+const myArray = [3, true, "abc", {}];
 console.log(myArray);
 
-myArray[1] = "Second element";
+myArray[1] = "New value";
 console.log(myArray);
 
-myArray.push("Third element");
+myArray[0] = null;
 console.log(myArray);
+
+myArray[3].newProp = 10;
+console.log(myArray);
+console.log(myArray[3].newProp);
+console.log(myArray[3]["newProp"]);
