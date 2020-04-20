@@ -29,16 +29,25 @@
  * Modify Elements
  */
 
-const myArray = [3, true, "abc", {}];
-console.log(myArray);
+// const myArray = [3, true, "abc", {}];
+// console.log(myArray);
 
-myArray[1] = "New value";
-console.log(myArray);
+// myArray[1] = "New value";
+// console.log(myArray);
 
-myArray[0] = null;
-console.log(myArray);
+// myArray[0] = null;
+// console.log(myArray);
 
-myArray[3].newProp = 10;
-console.log(myArray);
-console.log(myArray[3].newProp);
-console.log(myArray[3]["newProp"]);
+// myArray[3].newProp = 10;
+// console.log(myArray);
+// console.log(myArray[3].newProp);
+// console.log(myArray[3]["newProp"]);
+
+/**
+ * Example 4
+ * 
+ * Square bracket notation
+ */
+const myArray = [1, 2];
+console.log(myArray[0]);
+// console.log(myArray.0);  Cannot access array property using dot notation
