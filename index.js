@@ -87,14 +87,24 @@
 
 // console.log(myArray1.toString() === myArray2.toString()); // true, compares both as strings. Works only if the order is the same
 
+// /**
+//  * CHALLENGE 1
+//  *
+//  * Add elements to the array
+//  * First add string "Hello"
+//  * Then add number 100
+//  */
+// const myArray = [true, null];
+// myArray.unshift("Hello");
+// myArray.unshift(100);
+// console.log(myArray);
+
 /**
- * CHALLENGE 1
+ * CHALLENGE 2
  *
- * Add elements to the array
- * First add string "Hello"
- * Then add number 100
+ * Add element to specific index
+ * Add element 'abc' at index 10
  */
-const myArray = [true, null];
-myArray.unshift("Hello");
-myArray.unshift(100);
+const myArray = [1, 2];
+myArray[10] = "abc";
 console.log(myArray);
