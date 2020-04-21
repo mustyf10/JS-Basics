@@ -52,23 +52,37 @@
 // console.log(myArray[0]);
 // // console.log(myArray.0);  Cannot access array property using dot notation
 
+// /**
+//  * Example 5
+//  *
+//  * Delete elements
+//  */
+// const myArray = [true, null, 1, 2, "abc"];
+// console.log(myArray);
+
+// delete myArray[2]; //length will remain the same but specific element name will be deleted
+// console.log(myArray);
+// console.log(myArray[2]); //undefined
+
+// myArray.pop(); // deletes last element in array
+// console.log(myArray);
+
+// myArray.pop();
+// console.log(myArray);
+
+// myArray.shift(); // remove first element in array
+// console.log(myArray);
+
 /**
- * Example 5
+ * Example 6
  *
- * Delete elements
+ * Compare arrays
  */
-const myArray = [true, null, 1, 2, "abc"];
-console.log(myArray);
+const myArray1 = [1, 2, 3];
+const myArray2 = [1, 2, 3];
+console.log(myArray1 === myArray2); // false on strict comparison operator
 
-delete myArray[2]; //length will remain the same but specific element name will be deleted
-console.log(myArray);
-console.log(myArray[2]); //undefined
+const copyOfMyArray1 = myArray1;
+console.log(copyOfMyArray1 === myArray1); // true variables hold the same values
 
-myArray.pop(); // deletes last element in array
-console.log(myArray);
-
-myArray.pop();
-console.log(myArray);
-
-myArray.shift(); // remove first element in array
-console.log(myArray);
+console.log(myArray1.toString() === myArray2.toString()); // true, compares both as strings. Works only if the order is the same
