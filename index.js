@@ -87,24 +87,40 @@
 
 // console.log(myArray1.toString() === myArray2.toString()); // true, compares both as strings. Works only if the order is the same
 
+// // /**
+// //  * CHALLENGE 1
+// //  *
+// //  * Add elements to the array
+// //  * First add string "Hello"
+// //  * Then add number 100
+// //  */
+// // const myArray = [true, null];
+// // myArray.unshift("Hello");
+// // myArray.unshift(100);
+// // console.log(myArray);
+
 // /**
-//  * CHALLENGE 1
+//  * CHALLENGE 2
 //  *
-//  * Add elements to the array
-//  * First add string "Hello"
-//  * Then add number 100
+//  * Add element to specific index
+//  * Add element 'abc' at index 10
 //  */
-// const myArray = [true, null];
-// myArray.unshift("Hello");
-// myArray.unshift(100);
+// const myArray = [1, 2];
+// myArray[10] = "abc";
 // console.log(myArray);
 
 /**
- * CHALLENGE 2
+ * CHALLENGE 3
  *
- * Add element to specific index
- * Add element 'abc' at index 10
+ * Create Array with 3 objects
+ * Each object will have two properties
+ * Add one more object to the array
+ * Log to console
  */
-const myArray = [1, 2];
-myArray[10] = "abc";
-console.log(myArray);
+const arrayOfCars = [
+  { carBrand: "VW", price: 2000 },
+  { carBrand: "Seat", price: 1000 },
+  { carBrand: "Audi", price: 3000 },
+];
+arrayOfCars.push({ carBrand: "Skoda", price: 50 });
+console.log(arrayOfCars);
