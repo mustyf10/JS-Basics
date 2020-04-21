@@ -73,16 +73,28 @@
 // myArray.shift(); // remove first element in array
 // console.log(myArray);
 
+// /**
+//  * Example 6
+//  *
+//  * Compare arrays
+//  */
+// const myArray1 = [1, 2, 3];
+// const myArray2 = [1, 2, 3];
+// console.log(myArray1 === myArray2); // false on strict comparison operator
+
+// const copyOfMyArray1 = myArray1;
+// console.log(copyOfMyArray1 === myArray1); // true variables hold the same values
+
+// console.log(myArray1.toString() === myArray2.toString()); // true, compares both as strings. Works only if the order is the same
+
 /**
- * Example 6
+ * CHALLENGE 1
  *
- * Compare arrays
+ * Add elements to the array
+ * First add string "Hello"
+ * Then add number 100
  */
-const myArray1 = [1, 2, 3];
-const myArray2 = [1, 2, 3];
-console.log(myArray1 === myArray2); // false on strict comparison operator
-
-const copyOfMyArray1 = myArray1;
-console.log(copyOfMyArray1 === myArray1); // true variables hold the same values
-
-console.log(myArray1.toString() === myArray2.toString()); // true, compares both as strings. Works only if the order is the same
+const myArray = [true, null];
+myArray.unshift("Hello");
+myArray.unshift(100);
+console.log(myArray);
